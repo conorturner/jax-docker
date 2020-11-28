@@ -1,9 +1,0 @@
-FROM python:3.8-buster
-
-ENV LC_ALL=C.UTF-8
-ENV LANG=C.UTF-8
-ENV XLA_PYTHON_CLIENT_PREALLOCATE=false
-ENV TF_FORCE_GPU_ALLOW_GROWTH=true
-
-
-RUN pip3 install --upgrade numpy scipy jax jaxlib==0.1.57 -f https://storage.googleapis.com/jax-releases/jax_releases.html
